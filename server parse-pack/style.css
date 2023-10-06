@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: yekan;
+  src: url(./font/Yekan.ttf);
+}
+.body {
+  font-family: yekan;
+}
+/* navbar */
+.navbar-container {
+  @apply flex flex-row justify-between w-3/4 m-auto py-8 ;
+}
+.right {
+  @apply flex flex-row;
+}
+.product {
+  @apply lg:flex flex-row  sm:hidden md:flex min-[480px]:hidden; 
+  align-items: center;
+}
+.item-product {
+  @apply lg:mx-3 lg:text-stone-400 lg:text-[16px] md:text-[10px] text-neutral-700 mx-3;
+}
+.item-product:hover {
+  @apply text-sky-500;
+  font-size: 20px;
+}
+.logo {
+  width: 130px;
+  height: 50px;
+  margin-left: 3px;
+}
+.left {
+  @apply flex flex-row;
+  align-items: center;
+}
+.sign {
+  @apply text-blue-500 font-bold;
+}
+.sign:hover {
+  @apply text-neutral-600;
+}
+.enter {
+  @apply bg-blue-500 text-white rounded-full mx-3 px-2 py-1;
+}
+.enter:hover {
+  @apply bg-neutral-600;
+}
+/* end navbar */
+/* buuuuuuy */
+.buy-container {
+  @apply flex flex-row w-3/4 m-auto py-20 min-[480px]:flex-col ;
+}
+.text-buy {
+  @apply flex flex-col w-[40%] m-auto min-[480px]:w-full ;
+}
+.img-buy {
+  @apply w-[60%] m-auto lg:mb-[50px];
+  /* margin-bottom: 50px; */
+}
+.text1 {
+  @apply md:text-sky-600 font-bold my-2 sm:text-sky-600 lg:text-[40px] sm:text-[25px];
+  /* font-size: 40px; */
+}
+.text2 {
+  @apply text-sky-600 font-bold my-2 sm:text-sky-500 lg:text-[16px] sm:text-[13px] sm:font-bold;
+  /* font-size: 16px; */
+}
+.paragragh {
+  @apply lg:text-neutral-600 lg:text-[17px] sm:text-[13px] min-[480px]:text-[13px];
+  /* font-size: 17px; */
+  line-height: 25px;
+}
+/* end of buuuuy */
+/* prices */
+.price-container {
+  @apply md:flex flex-col w-3/4 m-auto  pb-32  ;
+}
+.price-tittle {
+  @apply lg:flex text-neutral-500 mt-20 mb-5 font-bold lg:text-[33px] sm:text-[20px] sm:text-center ;
+  /* font-size: 33px; */
+  justify-content: center;
+}
+.price-border { @apply lg:w-[55%] lg:m-auto sm:w-[55%] sm:m-auto flex-row;
+  border-bottom: 2px solid #38bdf8;
+  /* width: 55%; */
+  /* margin: auto; */
+}
+.price-colction{
+    @apply xl:flex flex-row md:flex-row sm:flex-row min-[480px]:flex-row;
+}
+.price-body {
+  @apply lg:flex flex-row w-1/4 m-auto md:w-full sm:w-full min-[480px]:w-full;
+}
+.price-bb {
+  @apply md:flex flex-col mx-3;
+}
+.tb1 {
+  @apply lg:w-[60%] md:font-bold text-white rounded-full lg:p-1 lg:mr-[20px] ml-5 xl:mr-[45px]  justify-center mt-5 md:text-[15px] md:ml-0 sm:text-[13px] mr-[0px]  px-0;
+  background-color: #0ea5e9;
+  z-index: 1;
+  /* margin-right:50px; */
+  /* width: 60%; */
+  /* font-size: 22px; */
+  text-align: center;
+  /* margin-left: 50px; */
+}
+.tb2 {
+  @apply md:text-sky-500 p-5 rounded-xl lg:text-[18px] sm:text-[12px];
+  /* font-size: 18px; */
+  margin-top:-20px;
+  border: 1px solid #a3a3a3;
+}
+/* end of prices */
+/* abr */
+.abr-container{
+    @apply flex flex-row w-3/4 m-auto min-[480px]:flex-col ;
+}
+.abr-img{
+    @apply w-[70%] m-auto;
+    /* margin-left: 26px; */
+}
+.abr-text{
+    @apply w-[30%] m-auto min-[480px]:w-full;
+}
+.abar-body{
+  @apply min-[480px]:w-full
+}
+.abr-header{
+    @apply text-sky-500 font-bold lg:text-[35px] sm:text-[16px];
+    /* font-size: 35px; */
+}
+/* end abr */
+/* server */
+.server-img{
+    @apply w-[60%] m-auto;
+
+}
+.server-text{
+    @apply w-[40%] m-auto  min-[480px]:w-full mt-10;
+}
+/* end server */
+/* daman */
+.daman-img{
+    @apply w-[70%] m-auto min-[480px]:mt-32;
+    margin-left: -30px;
+}
+.daman-text{
+    @apply w-[30%] m-auto pb-32 min-[480px]:w-full ;
+    /* margin-bottom: 0px; */
+    /* margin-left: 30px; */
+}
+.daman-header{
+    @apply text-sky-600 font-bold;
+    font-size: 35px;
+}
+.d-text{
+    @apply text-sky-500 font-bold;
+    font-size: 20px;
+}
+/* end daman */
+.end-border{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #737373;
+    padding-bottom:20px;
+}
+/* icon */
+.icon-container{
+    @apply flex flex-col w-3/4 m-auto py-16;
+    align-items: center;
+    
+}
+.icon{
+color: #737373;
+@apply flex-grow flex-row font-bold 
+}
+.icon-item{
+    @apply mx-3
+}
+.icon-item:hover{
+    border-top: 1px solid #737373;
+    color: #0ea5e9;
+}
+/* end icon */
+/* mobile */
+
+/* end mobile */
